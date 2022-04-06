@@ -18,8 +18,8 @@ class UserInteractorImpl @Inject constructor(
         val searchResult = userRepository.search(accessToken, query)
         val albums = mutableListOf<Album>()
         searchResult?.tracks?.items?.forEach {
-            Log.d(TAG, "album is ${it.album.name}, uri is ${it.album.uri}")
-            albums.add(it.album)
+            Log.d(TAG, "album is ${it.album?.name}, uri is ${it.album?.uri}")
+            albums.add(it.album ?: return emptyList())
         }
 
         return albums

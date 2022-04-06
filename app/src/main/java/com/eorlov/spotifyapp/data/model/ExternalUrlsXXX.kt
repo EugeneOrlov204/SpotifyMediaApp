@@ -4,5 +4,5 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class ExternalUrlsXXX(
-    val spotify: String
+    val spotify: String? = null
 )

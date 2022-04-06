@@ -4,5 +4,5 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class ExternalIds(
-    val isrc: String
+    val isrc: String? = null
 )

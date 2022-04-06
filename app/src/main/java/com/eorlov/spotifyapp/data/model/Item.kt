@@ -4,21 +4,21 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class Item(
-    val album: Album,
-    val artists: List<ArtistX>,
-    val available_markets: List<String>,
-    val disc_number: Int,
-    val duration_ms: Int,
-    val explicit: Boolean,
-    val external_ids: ExternalIds,
-    val external_urls: ExternalUrlsXXX,
-    val href: String,
-    val id: String,
-    val is_local: Boolean,
-    val name: String,
-    val popularity: Int,
-    val preview_url: String,
-    val track_number: Int,
-    val type: String,
-    val uri: String
+    val album: Album? = null,
+    val artists: List<ArtistX>? = null,
+    val available_markets: List<String>? = null,
+    val disc_number: Int? = null,
+    val duration_ms: Int? = null,
+    val explicit: Boolean? = null,
+    val external_ids: ExternalIds? = null,
+    val external_urls: ExternalUrlsXXX? = null,
+    val href: String? = null,
+    val id: String? = null,
+    val is_local: Boolean? = null,
+    val name: String? = null,
+    val popularity: Int? = null,
+    val preview_url: String? = null,
+    val track_number: Int? = null,
+    val type: String? = null,
+    val uri: String? = null
 )

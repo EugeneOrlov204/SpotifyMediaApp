@@ -4,10 +4,10 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class ArtistX(
-    val external_urls: ExternalUrlsXX,
-    val href: String,
-    val id: String,
-    val name: String,
-    val type: String,
-    val uri: String
+    val external_urls: ExternalUrlsXX? = null,
+    val href: String? = null,
+    val id: String? = null,
+    val name: String? = null,
+    val type: String? = null,
+    val uri: String? = null
 )
